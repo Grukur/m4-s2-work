@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Jquery -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap Script -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- moment -->
+    <script defer src="./assets/vendors/moment.js"></script>
+    <!-- Script of own -->
+    <script defer src="./assets/js/script.js"></script>
+    <!-- Style -->
+
+    <!-- Icon -->
+    <link rel="icon" href="./assets/img/worker.png">
+    <title>Rebound m3 s5</title>
+</head>
+
+<body class="container">
+    <main>
+        <section id="signForm" class="mx-auto bg-secondary my-4 p-5 col-4 d-block">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a id="signSign" class="nav-link text-light" aria-current="page" href="#">SIGN UP</a>
+                </li>
+                <li class="nav-item">
+                    <a id="vipSign" class="nav-link text-light" href="#">VIP</a>
+                </li>
+            </ul>
+            <!-- <h2 class="text-light">SIGN UP<SPan class="text-dark px-3">VIP</SPan></h2> -->
+            <p class="text-light">Complete los siguientes campos para crear su cuenta regular. Considere
+                que a este tipo de cuenta se le asigna un nombre de usuaio.
+            </p>
+
+            <form action="">
+                <div class="pt-2">
+                    <label for="correo" class="form-label">CORREO</label>
+                    <input id="emailSign" type="email" name="correo" class="form-control rounded-5"
+                        placeholder="Ingresa tu correo">
+                </div>
+                <div class="py-4">
+                    <label for="paswword" class="form-label">CONTRASEÑA</label>
+                    <input id="passSign" type="password" name="password" class="form-control rounded-5"
+                        placeholder="Ingresa tu contraseña">
+                </div>
+                <div class="pb-4">
+                    <input type="checkbox" class="form-check-input" id="checkSign" value="">
+                    <label class="form-check-label text-light">Acepto los terminos y condiciones.</label>
+                </div>
+                <button id="btnSign" class="btn btn-primary rounded-5 w-100 mb-4">SIGN UP</button>
+            </form>
+            <hr class="text-light">
+
+        </section>
+
+
+        <section id="vipForm" class="mx-auto bg-secondary my-4 p-5 col-4 d-none">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a id="signVip" class="nav-link text-light" aria-current="page" href="#">SIGN UP</a>
+                </li>
+                <li class="nav-item">
+                    <a id="vipVip" class="nav-link text-light" href="#">VIP</a>
+                </li>
+            </ul>
+            <p class="text-light">Complete los siguientes campos para crear su cuenta regular. Considere
+                que a este tipo de cuenta se le asigna un nombre de usuaio.
+            </p>
+            <form action="">
+                <div class="pt-2">
+                    <label for="name" class="form-label">NOMBRE</label>
+                    <input id="nameVip" type="text" name="name" class="form-control rounded-5"
+                        placeholder="Ingresa tu nombre">
+                </div>
+                <div class="pt-2">
+                    <label for="correo" class="form-label">CORREO</label>
+                    <input id="emailVip" type="email" name="correo" class="form-control rounded-5"
+                        placeholder="Ingresa tu correo">
+                </div>
+                <div class="py-4">
+                    <label for="paswword" class="form-label">CONTRASEÑA</label>
+                    <input id="passVip" type="password" name="password" class="form-control rounded-5"
+                        placeholder="Ingresa tu contraseña">
+                </div>
+                <div class="pb-4">
+                    <input type="checkbox" class="form-check-input" id="checkVip" value="">
+                    <label for="flexCheckDefault" class="form-check-label text-light">Acepto los
+                        terminos y condiciones.</label>
+                </div>
+                <button id="btnVip" class="btn btn-warning rounded-5 w-100 mb-4">SIGN UP</button>
+            </form>
+            <hr class="text-light">
+        </section>
+
+        <div>
+            <div id="myModal" class="modal hide fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 id="modalTitle" class="modal-title"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="modalBody"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+</body>
+
+</html>
